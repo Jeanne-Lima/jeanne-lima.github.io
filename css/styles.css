@@ -1,0 +1,407 @@
+/*---------------------------------------------
+Proposta: Redesign do site http://rockinrio.com/rio/pt-BR
+
+Desenvolvido por: Jeanne Lima
+Behance: https://www.behance.net/jeannelimac442
+Linkedin: https://br.linkedin.com/in/jeannecslima
+---------------------------------------------*/
+
+/*Anotações -----------------------------------
+.Consertar o alinhamento centralizado dos elementos na seção do artista convidado - botões e divisores ainda está gambiarra
+.Cuidar da responsividade
+.Ajeitar os espaçamentos
+---------------------------------------------*/
+
+/* Informações Gerais
+---------------------------------------------*/
+body{
+    color: #fff;
+}
+.container{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+/* Estava interferindo no alinhamento das imagens de notícia */
+.col-xs-3, .col-xs-2{
+    float:none;
+}
+a{
+    color:#fff;
+}
+
+/* Seção Navbar
+---------------------------------------------*/
+.navbar{
+    background: #000;
+}
+.nav-parte-1{
+    float:left;
+}
+.nav-parte-2{
+    float: right;
+}
+.navbar-brand{
+    position: fixed;
+    left: 43%;
+    bottom: 15%;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.navbar .dropdown-menu{
+    background-color:rgba(0,0,0,0.5);
+}
+.navbar .dropdown-menu li a{
+    color: #fff;
+    margin: 10px 15px;
+    padding:0;
+    font-size: 12px;
+    font-weight: 600;
+}
+/* Seção Header
+---------------------------------------------*/
+.carousel-inner .item img{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-control{
+    position: absolute;
+    top: 45%;
+}
+.carousel-caption{
+    padding:0;
+    position: absolute;
+    top: 40%;
+}
+.titulo-carousel{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+}
+.saiba-mais-1{
+    margin: -35px 25px 0;
+}
+.saiba-mais-1 button{
+    display: block;
+    border: 3px solid #7DCD23;
+    border-radius: 0%;
+    background: transparent;
+    color: #fff;  
+    font-weight: 600;
+}
+.saiba-mais-1 .btn-extra-area{
+    background: #7DCD23;
+}
+.btn-extra-area .glyphicon{
+    color: #000;
+}
+#datas{
+    position: absolute;
+    top: 25px;
+    left: 15%;
+    z-index:2;
+}
+#nome{
+    border-bottom: 3px solid #fff;
+}
+#infos-datas{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    text-align: left;
+    padding: 0;
+    width: 100px;
+}
+#opcoes{
+    position: absolute;
+    right: 25%;
+}
+.btn-group, .linguagem button, .lugar button, .dropdown-menu{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-group .glyphicon{
+    margin:  0 0 0 5px;
+}
+.linguagem button{
+    border: none; 
+    border-left: 3px solid #fff;
+    margin: 20px 0 0;
+}
+.linguagem{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index:2;
+}
+.bandeira-linguagem{
+    width: 24px;
+    margin: 0 5px 0 0;
+}
+.lugar .dropdown-menu, .linguagem .dropdown-menu{
+    background-color:rgba(0,0,0,0.5);
+}
+.lugar .dropdown-menu li a, .linguagem .dropdown-menu li a{
+    color: #fff;
+    margin: 10px 15px;
+    padding:0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.lugar button{
+    border: none; 
+    margin: 20px 0 0;
+}
+.lugar{
+    position: absolute;
+    top: 5px;
+    left: -75px;
+    z-index:2;
+}
+/* Seção Hotéis Oficiais
+---------------------------------------------*/
+#secao-hoteis{
+    background-image: url('../img/bg-hoteis.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.infos-hoteis{
+    position: relative;
+    top: 35%;
+    left: 40%;
+}
+.infos-titulo{
+    margin: 0 0 25px 0;
+}
+.titulo-secoes{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.divisor-linha{
+    display:block;
+    border-bottom: 3px solid #E4446F;
+    width: 15%;
+    padding: 0;
+    margin: 20px 0;  
+}
+.explicacao-secoes{
+    font-size: 21px;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 0%;
+    background: transparent;
+    color: #fff;
+    margin: 25px 0;
+}
+
+/* Seção Artista Convidado
+---------------------------------------------*/
+#secao-convidado{
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#img-convidado{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.infos-convidado{
+    position: relative;
+    top: 35%;
+}
+#secao-convidado .infos-titulo{
+    text-align: center;
+}
+.subtitulo-secoes{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+#secao-convidado .divisor-linha{
+    position: relative;
+    left:42.5%;
+    border-bottom: 3px solid #E46230;
+}
+#secao-convidado button{
+    position: relative;
+    left:22.5%;
+}
+
+/* Seção Produtos Oficiais
+---------------------------------------------*/
+#secao-produtos{
+    background-image: url('../img/bg-produtos-oficias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.infos-produtos{
+    position: relative;
+    top: 15%;
+}
+#img-produtos{
+    margin: 100px 0 50px;
+}
+.produto{
+    display: inline-block;
+    margin: 0 5px; 
+}
+#secao-produtos .divisor-linha{
+    position: relative;
+    left:42.5%;
+    border-bottom: 3px solid #3EB6DD;
+}
+#secao-produtos button{
+    position: relative;
+    left:43.5%;
+}
+/* Seção Notícias
+---------------------------------------------*/
+#secao-noticias{
+    background-image: url('../img/bg-noticias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 125vh;
+}
+.infos-noticias{
+    position: relative;
+    top: 7.5%;
+}
+#secao-noticias .titulo-secoes{
+    position: relative;
+    left: 63.5%;
+}
+#secao-noticias .divisor-linha{
+    position: relative;
+    left: 85%;
+    border-bottom: 3px solid #B6E302;
+}
+.descricao-noticias{
+    margin: 50px 0 0;
+}
+.descricao-noticias:last-child{
+    margin: 25px 0 0;
+}
+.img-noticia, .descricao-noticias{
+    display: inline-block;
+}
+.subtitulo-noticias{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin: 0 0 10px;
+    
+}
+.titulo-noticias{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.bloco-noticia{
+    margin: 20px 0;
+}
+.bloco-noticia:nth-child(3){
+    position:relative;
+    left:21%;
+}
+.bloco-noticia:nth-child(4){
+    position:relative;
+    left:25%;
+}
+
+
+/* Seção Dados
+---------------------------------------------*/
+#secao-dados{
+    background-image: url('../img/bg-dados.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 110vh;
+    text-transform: uppercase;
+}
+.bloco-dado-1,.bloco-dado-2,.bloco-dado-3,.bloco-dado-4{
+    text-align: center;
+    margin: 100px 0 100px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.numero-dado{
+    display: block;
+    font-size: 60px;
+}
+.titulo-dado{
+    display: block;
+    font-size: 36px;
+}
+.subtitulo-dado{
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+}
+#secao-dados button{
+    position: relative;
+    left:38%;
+}
+.bloco-dado-1{
+    color: #1DA812;
+}
+.bloco-dado-2{
+    color: #27CCBC;
+}
+.bloco-dado-3{
+    color: #B554F2;
+}
+.bloco-dado-4{
+    color: #E33B3B;
+}
+.retangulo-dado-1{
+    position: absolute;
+    left:21.5%;
+    top: 20%;
+}
+
+/* Efeitos
+---------------------------------------------*/
+a:hover, a:active{
+    color:#fff;
+}
+#opcoes .btn:hover, #opcoes .dropdown-menu a:hover, .navbar .dropdown-menu a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.bloco-noticia a:hover{
+    filter: grayscale(100%)
+}
+
+/* jQueries
+---------------------------------------------*/

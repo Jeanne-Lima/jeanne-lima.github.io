@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <title>Redesign | Jeanne Lima</title>
+        
+            <!-- Links Carousel-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+            <!-- Links Base-->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container col-xs-12">
+            <!-- Navbar -->
+            <nav class="navbar navbar-inverse navbar-fixed-bottom col-xs-12">
+              <div class="container-fluid col-xs-10 col-xs-offset-1">
+                
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="img/logo.png" width="150px"></a>
+                </div>
+
+               
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav nav-parte-1">
+                    <li><a href="#">Line-up</a></li>
+                    <li><a href="#">Ingressos</a></li>
+                    <li><a href="#">Informações</a></li>
+                  </ul> 
+                    
+                  <ul class="nav navbar-nav nav-parte-2">
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Por um mundo melhor</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="glyphicon glyphicon-menu-up"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Game XP</a></li>
+                        <li><a href="#">Amazonia Live</a></li>
+                        <li><a href="#">Rock In Rio Academy</a></li>
+                        <li><a href="#">Rock In Rio Club</a></li>
+                        <li><a href="#">Quero casar no Rock In Rio</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- Fim Navbar -->
+            
+            <!-- Datas Evento -->
+            <div id="datas">
+                <span id="nome">Rock In Rio 2017</span>
+                <ul id="infos-datas"><li>15 a 17</li><li>21 a 24</li><li>de setembro</li></ul>
+                
+            </div>
+            
+            <div id="opcoes">
+                <!-- Dropdown Linguagem -->              
+                <div class="btn-group linguagem">
+                    <button type="button" class="btn btn-default btn-fic dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/brazil_flags_flag_16979.png" class="bandeira-linguagem">Pt<span class="glyphicon glyphicon-menu-down"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><img src="img/brazil_flags_flag_16979.png" class="bandeira-linguagem">Português</a></li>
+                      <li><a href="#"><img src="img/united_states_flags_flag_17080.png" class="bandeira-linguagem">Inglês</a></li>
+                      <li><a href="#"><img src="img/spain_flags_flag_17068.png" class="bandeira-linguagem">Espanhol</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Dropdown Lugar -->
+                <div class="btn-group lugar">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/brazil_flags_flag_16979.png" class="bandeira-linguagem">Rio<span class="glyphicon glyphicon-menu-down"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><img src="img/brazil_flags_flag_16979.png" class="bandeira-linguagem">Rio</a></li>
+                    <li><a href="#"><img src="img/united_states_flags_flag_17080.png" class="bandeira-linguagem">USA</a></li>
+                    <li><a href="#"><img src="img/portugal_flags_flag_17054.png" class="bandeira-linguagem">Lisboa</a></li>
+                  </ul>
+                </div>
+            </div>
+            
+            <!-- Seção Carousel-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Wrapper dos slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/bg-header-2.jpg">
+                        <div class="carousel-caption">
+                            <span class="titulo-carousel">Nova Cidade do Rock Ilustrada</span>
+                            <div class="btn-group saiba-mais-1">
+                                <button type="button" class="btn btn-default btn-extra-area" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                <button type="button" class="btn btn-default">Saiba Mais</button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/bg-header-2.jpg">
+                        <div class="carousel-caption">
+                            <span class="titulo-carousel">Nova Cidade do Rock Ilustrada</span>
+                            <div class="btn-group saiba-mais-1">
+                                <button type="button" class="btn btn-default btn-extra-area" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                <button type="button" class="btn btn-default">Saiba Mais</button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/bg-header-2.jpg">
+                        <div class="carousel-caption">
+                            <span class="titulo-carousel">Nova Cidade do Rock Ilustrada</span>
+                            <div class="btn-group saiba-mais-1">
+                                <button type="button" class="btn btn-default btn-extra-area" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                <button type="button" class="btn btn-default">Saiba Mais</button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="img/bg-header-2.jpg">
+                        <div class="carousel-caption">
+                            <span class="titulo-carousel">Nova Cidade do Rock Ilustrada</span>
+                            <div class="btn-group saiba-mais-1">
+                                <button type="button" class="btn btn-default btn-extra-area" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                <button type="button" class="btn btn-default">Saiba Mais</button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controladores de Proximo e Anterior -->
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <img src="img/seta-carousel-dir.png">
+                    <span class="sr-only">Próximo</span>
+                </a>
+                
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <img src="img/seta-carousel-esq.png">
+                    <span class="sr-only">Anterior</span>
+                </a>
+              </div>
+            
+            <!-- Seção Hotéis Oficiais-->
+            <section id="secao-hoteis">
+                <div class="infos-hoteis col-xs-6">
+                    
+                    <div class="infos-titulo">
+                        <span class="titulo-secoes">Hotéis<br>Oficiais</span>
+                        <i class="divisor-linha"></i>
+                    </div>
+                    
+                    <span class="explicacao-secoes">Dezenas de hotéis oficiais com preços imbatíveis por garantia, para você viver a experiência completa do Rock in Rio 2017.</span>
+                    
+                    <button type="button" href="#" class="btn btn-default">Escolha o seu</button>
+                    
+                </div>
+            </section>
+            <!-- Fim Seção Hotéis Oficiais-->
+            
+            <!-- Seção Artista Convidado-->
+            <section id="secao-convidado">
+                
+                <img class="img-responsive" id="img-convidado" src="img/justin-timberlake.png">
+                
+                <div class="infos-convidado col-xs-5">
+                    
+                    <div class="infos-titulo">
+                        <span class="subtitulo-secoes">Quem vem</span>
+                        <span class="titulo-secoes">Justin Timberlake</span>
+                        <i class="divisor-linha"></i>
+                    </div>
+                    
+                    <span class="explicacao-secoes">Dezenas de hotéis oficiais com preços imbatíveis por garantia, para você viver a experiência completa do Rock in Rio 2017.</span>
+                    
+                    <button type="button" href="#" class="btn btn-default">Confira o line-up completo</button>
+                    
+                </div>
+            </section>
+            <!-- Fim Seção Artista Convidado-->
+            
+            <!-- Seção Artista Convidado-->
+            <section id="secao-produtos">
+                <div class="infos-produtos col-xs-12">
+                    
+                    <div class="infos-titulo">
+                        <span class="subtitulo-secoes">Rock In Rio</span>
+                        <span class="titulo-secoes">Produtos Oficias</span>
+                        <i class="divisor-linha"></i>
+                    </div>
+                    
+                    <div id="img-produtos">
+                        <img class="img-responsive produto" src="img/produto-1.jpg">
+                        <img class="img-responsive produto" src="img/produto-2.jpg">
+                        <img class="img-responsive produto" src="img/produto-3.jpg">
+                    </div>
+
+                    <button type="button" href="#" class="btn btn-default">Visitar a loja</button>
+                    
+                </div>
+            </section>
+            <!-- Fim Seção Artista Convidado-->
+            
+            <!-- Seção Noticias-->
+            <section id="secao-noticias">
+                <div class="infos-noticias col-xs-10 col-xs-offset-1">
+                    
+                    <div class="infos-titulo">
+                        <span class="titulo-secoes">Últimas Notícias</span>
+                        <i class="divisor-linha"></i>
+                    </div>
+                    
+                    <div class="bloco-noticia col-xs-12">
+                        <a href="#">
+                            <img class="img-responsive img-noticia" src="img/noticia-colorido-1.jpg">
+                            <div class="descricao-noticias col-xs-3">
+                                <span class="subtitulo-noticias">4 dias</span>
+                                <span class="titulo-noticias">Já temos os finalistas da promoção "Eu Vou Casar no Rock In Rio"</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="bloco-noticia col-xs-6">
+                        <a href="#">
+                            <div class="descricao-noticias col-xs-6">
+                                <span class="subtitulo-noticias">Aprox. 1 mês</span>
+                                <span class="titulo-noticias">Os ingressos estão esgotados e Roberto Medina tem um recado para você</span>
+                            </div>
+                            <img class="img-responsive img-noticia" src="img/noticia-colorido-2.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="bloco-noticia col-xs-4">
+                        <a href="#">
+                            <img class="img-responsive img-noticia" src="img/noticia-colorido-3.jpg">
+                            <div class="descricao-noticias col-xs-8">
+                                <span class="subtitulo-noticias">8 dias</span>
+                                <span class="titulo-noticias">Escolha seu casal favorito</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <button type="button" href="#" class="btn btn-default">Todas as Novidades</button>
+                    
+                </div>
+            </section>
+            <!-- Fim Seção Noticias-->
+            
+            <!-- Seção Artista Convidado-->
+            <section id="secao-dados">
+                <div class="infos-dados col-xs-10 col-xs-offset-1">
+                    
+                    <div class="coluna-dado col-xs-6">
+                        <div class="bloco-dado-1">
+                            <span class="numero-dado">17</span>
+                            <span class="titulo-dado">Edições</span>
+                            <span class="subtitulo-dado">Desde 1985</span>
+                        </div>
+
+                        <div class="bloco-dado-3">
+                            <span class="numero-dado">8,5M</span>
+                            <span class="titulo-dado">Pessoas</span>
+                            <span class="subtitulo-dado">Na platéia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="coluna-dado col-xs-6">
+                        <div class="bloco-dado-2">
+                            <span class="numero-dado">1588</span>
+                            <span class="titulo-dado">Artistas</span>
+                            <span class="subtitulo-dado">Escalados</span>
+                        </div>
+
+                        <div class="bloco-dado-4">
+                            <span class="numero-dado">3M</span>
+                            <span class="titulo-dado">De árvores</span>
+                            <span class="subtitulo-dado">Doadas à Amazônia</span>
+                        </div>
+                    </div>
+
+                    <button type="button" href="#" class="btn btn-default">Conheça a História</button>
+                    
+                </div>
+            </section>
+            <!-- Fim Seção Artista Convidado-->
+        </div>
+    </body>
+</html>
+
+    
